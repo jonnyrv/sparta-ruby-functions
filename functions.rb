@@ -82,16 +82,13 @@ end
 # For numbers which are multiples of both three and five print "FizzBuzz".
 
 def fizz_buzz number 
-    if number % 3 == 0 
-        return "fiz"
+    if number % 3 == 0 && number % 5 == 0 
+        return "FizzBuzz"
     elsif number % 5 == 0 
-        return "buzz" 
-    elsif number % 3 == 0 && number % 5 == 0 
-        return "fizzbuzz"
+        return "Buzz" 
+    elsif number % 3 == 0
+        return "Fizz"
     else
-        return number
+        number
     end
 end
-
-
-
